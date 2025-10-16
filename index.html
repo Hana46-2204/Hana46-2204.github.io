@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
- <head>
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title lang="en">Self-introduction - Wikipedia</title>
- </head>
- <body>
-  <article>
-   <h1 lang="en">Self-introduction</h1>
-   <p>HTMLは、<a href="http://ja.wikipedia.org/wiki/SGML">SGML</a>
-      アプリケーションの一つで、ハイパーテキストを利用してワールド
-      ワイドウェブ上で情報を発信するために作られ、
-      ワールドワイドウェブの<strong>基幹的役割</strong>をなしている。
-      情報を発信するための文書構造を定義するために使われ、
-      ある程度機械が理解可能な言語で、
-      写真の埋め込みや、フォームの作成、
-      ハイパーテキストによるHTML間の連携が可能である。</p>
-  </article>
- </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>パディントンの世界</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6e3;
+      color: #333;
+    }
+    header {
+      background-color: #ff9800;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .intro img {
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    .intro-text {
+      max-width: 600px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #ff9800;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>パディントンの世界へようこそ</h1>
+    <p>くまのパディントンと一緒に冒険しよう！</p>
+  </header>
+  <main>
+    <section class="intro">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/62/Paddington_Bear.PNG" alt="パディントンの画像">
+      <div class="intro-text">
+        <h2>パディントンって誰？</h2>
+        <p>
+          パディントンはペルーからロンドンにやってきた心優しいくま。赤い帽子と青いコートがトレードマークで、
+          マーマレードが大好き。彼の冒険は世界中の人々に愛されています。
+        </p>
+        <a class="button" href="https://www.paddington.com/jp/" target="_blank">公式サイトを見る</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 パディントンファンページ
+  </footer>
+</body>
 </html>
 
 
