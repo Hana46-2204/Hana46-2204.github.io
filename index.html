@@ -9,17 +9,32 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdf6e3;
+      background-color: #fff8e1;
       color: #333;
     }
     header {
       background-color: #ff9800;
       color: white;
-      padding: 1rem;
+      padding: 2rem;
       text-align: center;
+    }
+    nav {
+      background-color: #f57c00;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
     main {
       padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
     }
     .intro {
       display: flex;
@@ -31,21 +46,36 @@
       max-width: 300px;
       border-radius: 8px;
     }
-    .intro-text {
-      max-width: 600px;
+    .gallery img {
+      width: 200px;
+      margin: 1rem;
+      border-radius: 8px;
     }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #ff9800;
-      color: white;
-      text-decoration: none;
+    .video iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .product-card {
+      background-color: #fff3e0;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
       border-radius: 4px;
     }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
       background-color: #eee;
       font-size: 0.9rem;
     }
@@ -54,26 +84,80 @@
 <body>
   <header>
     <h1>パディントンの世界へようこそ</h1>
-    <p>くまのパディントンと一緒に冒険しよう！</p>
+    <p>くまのパディントンと一緒に、心温まる冒険を楽しもう！</p>
   </header>
+
+  <nav>
+    <a href="#about">紹介</a>
+    <a href="#history">歴史</a>
+    <a href="#gallery">ギャラリー</a>
+    <a href="#video">動画</a>
+    <a href="#products">グッズ</a>
+  </nav>
+
   <main>
-    <section class="intro">
+    <section id="about" class="intro">
       <img src="https://upload.wikimedia.org/wikipedia/en/6/62/Paddington_Bear.PNG" alt="パディントンの画像">
-      <div class="intro-text">
+      <div>
         <h2>パディントンって誰？</h2>
         <p>
           パディントンはペルーからロンドンにやってきた心優しいくま。赤い帽子と青いコートがトレードマークで、
-          マーマレードが大好き。彼の冒険は世界中の人々に愛されています。
+          マーマレードが大好き。彼はブラウン一家に迎えられ、日々ユニークな出来事に巻き込まれながらも、
+          紳士的で礼儀正しい振る舞いで周囲を魅了します。
         </p>
-        <a class="button" href="https://www.paddington.com/jp/" target="_blank">公式サイトを見る</a>
+      </div>
+    </section>
+
+    <section id="history">
+      <h2>パディントンの歴史</h2>
+      <p>
+        パディントンは1958年にマイケル・ボンドによって創作されました。最初の本『くまのパディントン』は、
+        その愛らしいキャラクターとユーモアで瞬く間に人気を集め、世界中で翻訳されるようになりました。
+        その後、テレビアニメや映画にも登場し、今ではイギリスを代表する児童文学キャラクターの一人です。
+      </p>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>パディントンのギャラリー</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Paddington_Bear_statue.jpg" alt="パディントン像">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Paddington_Station_Bear.jpg" alt="駅のパディントン像">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Paddington_Bear_books.jpg" alt="パディントンの本">
+    </section>
+
+    <section id="video" class="video">
+      <h2>パディントンの動画</h2>
+      <p>映画『パディントン』の予告編をご覧ください：</p>
+      <iframe src="https://www.youtube.com/embed/52x5c9z3JqQ" allowfullscreen></iframe>
+    </section>
+
+    <section id="products">
+      <h2>おすすめグッズ</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://example.com/paddington-plush.jpg" alt="ぬいぐるみ">
+          <h3>パディントンぬいぐるみ</h3>
+          <p>ふわふわで抱き心地抜群！</p>
+        </div>
+        <div class="product-card">
+          <img src="https://example.com/paddington-book.jpg" alt="絵本">
+          <h3>絵本『くまのパディントン』</h3>
+          <p>初めての冒険を描いた名作。</p>
+        </div>
+        <div class="product-card">
+          <img src="https://example.com/paddington-mug.jpg" alt="マグカップ">
+          <h3>パディントンマグ</h3>
+          <p>朝のコーヒータイムにぴったり。</p>
+        </div>
       </div>
     </section>
   </main>
+
   <footer>
-    &copy; 2025 パディントンファンページ
+    &copy; 2025 パディントンファンページ | <a href="https://www.paddington.com/jp/" target="_blank">公式サイト</a>
   </footer>
 </body>
 </html>
+
 
 
 
